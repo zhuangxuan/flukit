@@ -74,6 +74,7 @@ class MyHomePage extends StatefulWidget {
 //防止热更新失效，我们不定义为静态变量
 List<Page> getRoutes(){
   return  [
+    Page("onResume", const AfterLayoutRoute(),showLog: true),
     Page("AfterLayout", const AfterLayoutRoute(), showLog: true),
     Page(
       "AccurateSizedBox",
